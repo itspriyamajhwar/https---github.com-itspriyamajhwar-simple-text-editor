@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor">
+            <div class="toolbar">
+                <button id="undo" class="btn">Undo</button>
+                <button id="redo" class="btn">Redo</button>
+            </div>
+            <div class="settings">
+                <label for="fontSelect">Font:</label>
+                <select id="fontSelect">
+                    <option value="Arial">Arial</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                </select>
+                <label for="fontSize">Size:</label>
+                <input type="number" id="fontSize" value="16">
+                <label for="fontColor">Color:</label>
+                <input type="color" id="fontColor" value="#000000">
+            </div>
+            <button id="addText" class="btn">Apply Settings</button>
+            <div id="textArea" contenteditable="true" class="text-area">New Text</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
